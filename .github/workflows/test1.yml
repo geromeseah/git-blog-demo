@@ -12,7 +12,7 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: The ${{ github.event_name }} event triggered first step.
+        args: A new commit was pushed to the repository
 
     - name: send default message
       uses: appleboy/telegram-action@master
