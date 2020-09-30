@@ -40,22 +40,6 @@ Remove `args` to send the default message.
 
 ![workflow](./images/telegram-workflow.png)
 
-## Input variables
-
-* socks5 - optional. support socks5 proxy URL
-* photo - optional. photo message
-* document - optional. document message
-* sticker - optional. sticker message
-* audio - optional. audio message
-* voice - optional. voice message
-* location - optional. location message
-* venue - optional. venue message
-* video - optional. video message
-* debug - optional. enable debug mode
-* format - optional. `markdown` or `html`. See [MarkdownV2 style](https://core.telegram.org/bots/api#markdownv2-style)
-* message - optional. custom message
-* message_file - optional. overwrite the default message template with the contents of the specified file.
-
 ## Example
 
 send photo message:
@@ -154,17 +138,3 @@ See the result: (get chat id like `65382999`)
   ]
 }
 ```
-
-## Template variable
-
-| Github Variable   | Telegram Template Variable |
-|-------------------|----------------------------|
-| GITHUB_REPOSITORY | repo                       |
-| GITHUB_ACTOR      | repo.namespace             |
-| GITHUB_SHA        | commit.sha                 |
-| GITHUB_REF        | commit.ref                 |
-| GITHUB_WORKFLOW   | github.workflow            |
-| GITHUB_ACTION     | github.action              |
-| GITHUB_EVENT_NAME | github.event.name          |
-| GITHUB_EVENT_PATH | github.event.path          |
-| GITHUB_WORKSPACE  | github.workspace           |
