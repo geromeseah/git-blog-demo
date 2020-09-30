@@ -12,4 +12,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: A new commit was pushed to the repository.
+        message: Good day, ${{ github.repository_owner }}! There was a ${{ github.event_name }} event in ${{ github.repository }}.
