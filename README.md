@@ -32,8 +32,6 @@ Remove `args` to send the default message.
     token: ${{ secrets.TELEGRAM_TOKEN }}
 ```
 
-![workflow](./images/telegram-workflow.png)
-
 ## Example
 
 send photo message:
